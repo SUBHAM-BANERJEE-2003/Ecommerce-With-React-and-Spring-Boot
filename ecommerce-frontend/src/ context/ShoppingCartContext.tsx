@@ -2,10 +2,10 @@ import { useContext, createContext, ReactNode, useState } from "react"
 
 
 type ShoppingCartContex={       //This is the structure of the context
-    getItemQuantity: (id: number) => number,
-    increaseItemQuantity: (id: number) => void,
-    decreaseItemQuantity: (id: number) => void,
-    removeFromCart: (id: number) => void,
+    getItemQuantity: (id: string) => number,
+    increaseItemQuantity: (id: string) => void,
+    decreaseItemQuantity: (id: string) => void,
+    removeFromCart: (id: string) => void,
     cartQuantity: number,
     openCart: () => void,
     closeCart: () => void,
@@ -23,7 +23,7 @@ type ShoppingCartProviderProps={
     children: ReactNode;
 }
 type CartItem={
-    id: number,
+    id: string,
     quantity: number
 }
 export function ShoppingCartProvider({children}: ShoppingCartProviderProps){ //implementing the provider
@@ -31,10 +31,10 @@ export function ShoppingCartProvider({children}: ShoppingCartProviderProps){ //i
     const[isOpen, setIsOpen] = useState<boolean>(false);
     const cartQuantity = cartItems.reduce((quantity, item) => item.quantity + quantity, 0)
 
-    function getItemQuantity(id: number){
+    function getItemQuantity(id: string){
         return cartItems.find(item => item.id === id)?.quantity || 0
     }
-    function increaseItemQuantity(id: number){
+    function increaseItemQuantity(id: string){
         setCartItems(itemsIntheCart => {
             if(itemsIntheCart.find(item => item.id === id)==null){
                 return [...itemsIntheCart, {id, quantity: 1}]
@@ -49,7 +49,7 @@ export function ShoppingCartProvider({children}: ShoppingCartProviderProps){ //i
             }
          })
     }
-    function decreaseItemQuantity(id: number){
+    function decreaseItemQuantity(id: string){
         setCartItems(itemsIntheCart => {
             if(itemsIntheCart.find(item => item.id === id)?.quantity===1){
                 return itemsIntheCart.filter(item => item.id !== id)
@@ -64,7 +64,7 @@ export function ShoppingCartProvider({children}: ShoppingCartProviderProps){ //i
             }
         })
     }
-    function removeFromCart(id: number){
+    function removeFromCart(id: string){
         setCartItems(itemsInTheCart=> {
             return itemsInTheCart.filter(item=> item.id !== id)
         })

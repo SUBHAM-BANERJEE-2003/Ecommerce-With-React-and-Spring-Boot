@@ -1,7 +1,5 @@
 package com.Backend.Server.dto;
 
-import io.micrometer.common.lang.NonNull;
-
 public class ProductsDTO {
     
     private String prod_id;
@@ -70,7 +68,6 @@ public class ProductsDTO {
         return prod_cat;
     }
 
-    @NonNull
     private int prod_price;
 
     private String prod_cat;

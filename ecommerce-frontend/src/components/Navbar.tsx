@@ -9,6 +9,7 @@ export function Navbar(){
     return (
         <NavbarBs sticky="top" className="bg-white mb-3 shadow-sm">
             <Container>
+                <h4 className="text-dark">E-Commerce</h4>
             <Nav>
                 <Nav.Link to="/" as={ NavLink }>Home</Nav.Link>
                 <Nav.Link to="/about" as={NavLink}>About</Nav.Link>

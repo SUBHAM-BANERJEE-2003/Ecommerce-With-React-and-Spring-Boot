@@ -14,8 +14,10 @@ import org.springframework.web.bind.annotation.RestController;
 import com.Backend.Server.MyException.ProductNotFoundException;
 import com.Backend.Server.dto.ProductsDTO;
 import com.Backend.Server.services.ProductService;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:5173")
 public class ProductsController {
 
     private final ProductService productService;
