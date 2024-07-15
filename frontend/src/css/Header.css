@@ -1,0 +1,65 @@
+
+.header-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #3f4347;
+    border-bottom: 1px solid #e9ecef;
+    height: 75px;
+}
+
+.header-body h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+.header-body a{
+    text-decoration: none;
+    color: white;
+}
+
+.header-body a:hover{
+    text-decoration: underline;
+}
+
+.login-button{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.logout-button{
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-left: 30px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.navlinks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlink{
+    margin: 0 40px;
+    list-style-type: none;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
