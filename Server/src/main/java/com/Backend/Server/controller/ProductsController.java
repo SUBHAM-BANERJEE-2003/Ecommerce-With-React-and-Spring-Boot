@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.Backend.Server.MyException.ProductNotFoundException;
+import com.Backend.Server.Exceptions.ProductNotFoundException;
 import com.Backend.Server.dto.ProductsDTO;
 import com.Backend.Server.services.ProductService;
 import org.springframework.web.bind.annotation.CrossOrigin;

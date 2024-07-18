@@ -1,4 +1,4 @@
-package com.Backend.Server.MyException;
+package com.Backend.Server.Exceptions;
 
 public class ProductNotFoundException extends Exception{
 

@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
-import com.Backend.Server.MyException.ProductNotFoundException;
+import com.Backend.Server.Exceptions.ProductNotFoundException;
 import com.Backend.Server.dto.ProductsDTO;
 import com.Backend.Server.entity.ProductsEntity;
 import com.Backend.Server.repositories.ProductRepository;
