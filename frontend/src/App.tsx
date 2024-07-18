@@ -5,6 +5,8 @@ import { BrowserRouter, Routes, Route  } from 'react-router-dom'
 import AddProductForm from './components/AddProductForm'
 import About from './components/About'
 import Contact from './components/Contact'
+import EditForm from './components/EditForm'
+import ProductDetails from './components/ProductDetails'
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
         <Route path='*' element={<h1>Not Found</h1>} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/edit/:id" element={<EditForm />} />
+        <Route path="/details/:id" element={<ProductDetails />} />
       </Routes>
       <Footer />
     </BrowserRouter>

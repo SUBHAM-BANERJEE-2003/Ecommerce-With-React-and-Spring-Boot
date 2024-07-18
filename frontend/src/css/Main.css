@@ -12,13 +12,11 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* display: flex; */
 }
 
 img{
     width: 150px;
     height: 150px;
-    border-radius: 50%;
 }
 
 table {
@@ -44,6 +42,7 @@ tr:nth-child(even) {
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 20px;
+    margin-right: 30px;
 }
 
 .delete-button{
@@ -52,7 +51,6 @@ tr:nth-child(even) {
     border: none;
     padding: 10px 10px;
     border-radius: 5px;
-    margin-left: 30px;
     cursor: pointer;
     margin-bottom: 20px;
 }

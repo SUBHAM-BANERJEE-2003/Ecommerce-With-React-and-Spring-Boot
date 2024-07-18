@@ -29,6 +29,13 @@ const MainContent = () => {
         getProducts()
     }, [])
 
+    const deleteProd = async (id: string) => {
+        await fetch(`http://localhost:8080/products/${id}`, {
+            method: 'DELETE',
+        })
+        setProducts(products.filter((product) => product.prod_id !== id))
+    }
+
     console.log(products)
 
     return (
@@ -57,10 +64,11 @@ const MainContent = () => {
                                 <td><b>$</b> {product.prod_price}</td>
                                 <td>{product.prod_cat}</td>
                                 <td>
+                                    <Link to={`/details/${product.prod_id}`}><button className='prim-button'>Details</button></Link>
                                     <Link to={`/edit/${product.prod_id}`}>
                                         <button className='prim-button'>Edit</button>
                                     </Link>
-                                    <button className='delete-button'>Delete</button>
+                                    <button className='delete-button' onClick={() => deleteProd(product.prod_id)}>Delete</button>
                                 </td>               
                             </tr>
                         ))}
