@@ -1,6 +1,6 @@
 #Project Demo Video
 
-<video controls src="SPRING BOOT PROJECT RECORDING - Made with Clipchamp.mp4" title="Title"></video>
+https://youtu.be/N7YQ80160FM
 
 
 #to run spring boot server:
