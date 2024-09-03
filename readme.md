@@ -1,6 +1,7 @@
 #Project Demo Video
 
-https://youtu.be/N7YQ80160FM
+[![VIDEO DEMO](https://img.youtube.com/vi/N7YQ80160FM)](https://www.youtube.com/watch?v=N7YQ80160FM)
+
 
 
 #to run spring boot server:
