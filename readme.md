@@ -1,7 +1,8 @@
 #Project Demo Video
 
-Click the below link to watch it
-[![VIDEO DEMO](https://img.youtube.com/vi/N7YQ80160FM)]([https://www.youtube.com/watch?v=N7YQ80160FM](https://youtu.be/N7YQ80160FM))
+https://github.com/user-attachments/assets/ad28d865-b759-4cbe-b2d3-0cd817cc7f5e
+
+
 
 
 
